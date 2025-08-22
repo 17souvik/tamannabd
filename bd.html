@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="card">
+        <!-- 
+            INSTRUCTIONS: 
+            1. Change the name "Sarah" to the birthday person's name.
+            2. Write your own personal message inside the <p> tag below.
+            3. Replace 'person1.png', 'person2.png', and 'person3.png' with your own image file names.
+               Make sure to add your images to the project folder.
+        -->
+        <h1 id="birthday-heading">Happy Birthday, Tamanna</h1>
+        
+        <p class="message">
+           I hope your day is filled with happiness, laughter, and all the things that make you smile. You’ve been a very special part of my life, and I’ll always be grateful for the memories we shared.
+
+No matter where life takes us, I’ll always wish the best for you. May this year bring you success, love, and endless joy.
+
+Stay happy always. </p>
+
+        <div class="gallery">
+            <img src="Image1.jpg" alt="Birthday girl picture 1">
+            <img src="Image2.jpg" alt="Birthday girl picture 2">
+            <img src="Image3.jpg" alt="Birthday girl picture 3">
+        </div>
+
+        <div class="cake-container">
+            <img src="cake.png" alt="Birthday Cake" class="cake" id="birthday-cake">
+            <p class="click-info">Click the cake for a surprise!</p>
+        </div>
+    </div>
+
+    <div id="video-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span id="close-video" class="close-button">&times;</span>
+            <!-- 
+                INSTRUCTION: 
+                Replace 'video.mp4' below with the path to your video file. 
+                Make sure to add your video to the project folder.
+            -->
+           <iframe
+            width="100%"
+            height="500"
+            src="https://player.cloudinary.com/embed/?cloud_name=dsjtxadmw&public_id=VN20250821_023426_dxiy9f&profile=cld-default"
+            frameborder="0"
+            allow="autoplay" 
+            
+            allow="fullscreen"
+            allowfullscreen>
+            </iframe>
+            </div>
+    </div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "canvas-confetti": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.module.mjs"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
